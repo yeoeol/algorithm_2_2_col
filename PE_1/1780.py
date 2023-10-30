@@ -4,7 +4,7 @@ matrix = []
 for i in range(N):
     matrix.append(list(map(int, input().split())))
 
-result = [0, 0, 0]
+total = [0, 0, 0]
 
 def ok(x, y, size):
     first = matrix[x][y]
@@ -15,9 +15,9 @@ def ok(x, y, size):
                     for z in range(3):
                         ok(x+k*size//3, y+z*size//3, size//3)
                 return
-    result[first] += 1
+    total[first] += 1
 
 ok(0, 0, N)
-print(result[-1])
-print(result[0])
-print(result[1])
+print(total[-1])
+print(total[0])
+print(total[1])
