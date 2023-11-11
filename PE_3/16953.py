@@ -15,6 +15,7 @@ def solve():
         q.append((int(str(pa)+'1'), pt+1))
         q.append((pa*2, pt+1))
 
+
 solve()
 if len(q)==0:
     print(-1)
