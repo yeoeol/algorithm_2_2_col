@@ -45,5 +45,6 @@ def bfs():
 
     result = max(result, cnt)
 
+
 make_wall(0)
 print(result)
